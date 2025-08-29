@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>formEx</title>
+</head>
+<body>
+    <!--form 태그를 통해 입력한 데이터를 mSignUp 파일에 get 방식으로 전송한다.-->
+    <form action="mSignUp.jsp" method="get">
+
+        <!--텍스트를 입력하는 칸을 만들고 입력받은 값은 m_name 이름으로 서버에 전송-->
+        name : <input type="text" name="m_name"><br>
+
+        <!--비밀번호를 입력하는 칸을 만들고 입력받은 값은 m_pass 이름으로 서버에 전송-->
+        password : <input type="password" name="m_pass"><br>
+
+        <!--여러 개를 선택할 수 있는 checkbox를 생성하고 선택된 체크박스의 value값을 서버로 전달-->
+        hobby : sport <input type="checkbox" name="m_hobby" value="sport">,
+                cocking <input type="checkbox" name="m_hobby" value="cocking">,
+                travel <input type="checkbox" name="m_hobby" value="travel"><br>
+
+                <!--사용자가 누르면 데이터를 전송하는 버튼(submit) sign up을 만든다.-->
+                <input type="submit" value="sign up">
+    </form>
+</body>
+</html>
