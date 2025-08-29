@@ -1,4 +1,4 @@
-package com.example.myapp;
+package com.test.myapp;
 
 import java.io.*;
 import jakarta.servlet.*;
